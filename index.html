@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href='/style' rel='stylesheet' type='text/css'>
+        <title>Cubed.io</title>
+    </head>
+    <body>
+        <section id="main">
+            <div id="main-title">Cubed.io</div>
+            <p id="nickLabel">Nickname:</p>
+            <form action="./game" id="join">
+            <input type="text" placeholder="Nick" id="nick" name="name" maxlength="11">
+            <br><br><!-- Sorry for BR's - Padding doesn't work nicely with input and button tags.-->
+            <input id="submit" type="submit" value="Play!">
+            <select name="Server" id="server">
+              <option value="http://jade.getsquared.xyz">Jade</option>
+            </select>
+           </form>
+        </section>
+        <script type="text/javascript">
+          document.getElementById('server').onchange = function(){
+            document.getElementById('join').action = this.value;
+          }
+</script>
+    </body>
+</html>
