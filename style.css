@@ -28,6 +28,17 @@ body{
     font-family: 'VT323';
     font-size:18px;
 }
+#server{
+    /*background-color: white;      TODO: Set colour here*/
+    border: 2px solid #BDBDBD;/*    TODO: Set new colour here*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 27px;
+    padding-left: 20px;
+    text-align: center;
+    font-family: 'VT323';
+    font-size:18px;
+}
 #submit{
     font-family: 'Share Tech Mono';
     font-size:25px;
