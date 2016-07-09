@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href='./style.css' rel='stylesheet' type='text/css'>
+        <title>You Died.</title>
+    </head>
+    <body>
+        <section id="main">
+            <div id="main-title">You Died.</div>
+            <p id="nickLabel">Your Points:<script>document.write(qs('points'))</script></p>
+            <a href="./index.html">Play Again</a>
+        </section>
+        <script>
+        qs = (function(a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i)
+    {
+        var p=a[i].split('=', 2);
+        if (p.length == 1)
+            b[p[0]] = "";
+        else
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+  })(window.location.search.substr(1).split('&'));</script>
+    </body>
+</html>
