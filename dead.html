@@ -4,13 +4,6 @@
         <meta charset="UTF-8">
         <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>You Died.</title>
-    </head>
-    <body>
-        <section id="main">
-            <div id="main-title">You Died.</div>
-            <p id="nickLabel">Your Points:<script>document.write(qs('points'))</script></p>
-            <a href="./index.html">Play Again</a>
-        </section>
         <script>
         qs = (function(a) {
     if (a == "") return {};
@@ -25,5 +18,12 @@
     }
     return b;
   })(window.location.search.substr(1).split('&'));</script>
+    </head>
+    <body>
+        <section id="main">
+            <div id="main-title">You Died.</div>
+            <p id="nickLabel">Your Points:<script>document.write(qs('points'))</script></p>
+            <a href="./index.html">Play Again</a>
+        </section>
     </body>
 </html>
