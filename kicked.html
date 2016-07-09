@@ -8,7 +8,7 @@
     <body>
         <section id="main">
             <div id="main-title">Oh No!</div>
-            <p id="nickLabel">It looks like you've been kicked. This is probably because of innapropriate, unruly, or mean behaviour. You can return to the main site below.<br>If this behaviour continues, you may be IP banned.</p>
+            <p id="nickLabel">It looks like you've been kicked. <br> Reason: <span id="Reason">Null</span></p>
             <a href="./index.html">Go Back Home</a>
         </section>
         <script>
@@ -24,6 +24,10 @@
             b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
     }
     return b;
-  })(window.location.search.substr(1).split('&'));</script>
+  })(window.location.search.substr(1).split('&'));
+  
+  document.getElementById("Reason").innerHTML = qs("r");
+  
+  </script>
     </body>
 </html>
