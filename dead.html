@@ -24,10 +24,13 @@
             <div id="main-title">You Died...</div>
             <p id="nickLabel">You Were Killed By: <script>document.write(qs.killer)</script></p>
             <p id="nickLabel">Your Points: <script>document.write(qs.points)</script></p>
-            <a href="./index.html" id="playagain">Play Again</a>
+            <button class="submit" id="playagain" onclick="go()">Play Again</button>
         </section>
         <script>
-            document.getElementById("playagain").href=qs.server+"/game?name="+qs.name; 
+            var location = qs.server+"/game?name="+qs.name; 
+            function go(){
+                window.location.replace(location);
+            }
         </script>
     </body>
 </html>
