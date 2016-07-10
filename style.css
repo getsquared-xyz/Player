@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=VT323);
+#instructions{
+    font-family: 'Share Tech Mono';
+    font-size: 13px;
+    padding-top: 20px;
+    
+}
 a{
     font-family: 'Share Tech Mono';
     font-size: 25px;
