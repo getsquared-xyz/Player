@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+                <script>
+            var location = qs.server+"/game?name="+qs.name; 
+            }
+        </script>
         <meta charset="UTF-8">
         <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>You Died...</title>
@@ -24,7 +28,7 @@
             <div id="main-title">You Died...</div>
             <p id="nickLabel">You Were Killed By: <script>document.write(qs.killer)</script></p>
             <p id="nickLabel">Your Points: <script>document.write(qs.points)</script></p>
-            <button class="submit" id="playagain" onclick="go()">Play Again</button>
+            <button class="submit" onclick="window.location.replace(location);">Play Again</button>
         </section>
         <script>
             var location = qs.server+"/game?name="+qs.name; 
