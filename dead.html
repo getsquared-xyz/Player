@@ -23,7 +23,10 @@
         <section id="main">
             <div id="main-title">You Died...</div>
             <p id="nickLabel">Your Points: <script>document.write(qs.points)</script></p>
-            <a href="./index.html">Play Again</a>
+            <a href="./index.html" id="playagain">Play Again</a>
         </section>
+        <script>
+            document.getElementById("playagain").href=qs.server+"/game?name="+qs.name; 
+        </script>
     </body>
 </html>
