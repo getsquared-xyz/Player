@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <meta charset="UTF-8">
         <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>You Died...</title>
@@ -22,16 +21,13 @@
     </head>
     <body>
         <section id="main">
-            <form action="" id="form">
             <div id="main-title">You Died...</div>
             <p id="nickLabel">You Were Killed By: <script>document.write(qs.killer)</script></p>
             <p id="nickLabel">Your Points: <script>document.write(qs.points)</script></p>
-            <input id="submit" type="submit" value="Play Again.">
-            </form>
-            <script>
-            var location = qs.server+"/game?name="+qs.name; 
-            document.getElementById("form").action = location;
-        </script>
+            <a href="./index.html" id="playagain">Play Again</a>
         </section>
+        <script>
+            document.getElementById("playagain").href=qs.server+"/game?name="+qs.name; 
+        </script>
     </body>
 </html>
