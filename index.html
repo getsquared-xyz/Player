@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='./commandprompt.css' rel='stylesheet' type='text/css'>
-        <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>GetSquared.xyz</title>
     </head>
     <body>
         <section id="main">
-            <div id="main-title">GetSquared.xyz</div>
-            <p id="nickLabel">Nickname:</p>
+            <div id="main-title"><cmd class="greenletters">getsquared.xyz</cmd></div>
+            <p id="nickLabel"><cmd class="msdos">C:\getsquared\username> </cmd>
             <form action="./" id="join">
-            <input type="text" placeholder="Nick" id="nick" name="name" maxlength="20">
+            <input type="text" placeholder="username" id="nick" name="name" maxlength="20">
+            </p>
             <br><br>
             <select name="Server" id="server">
-                <option value="./">-Select-</option>
+                <option value="./">server</option>
                 <!--<option value="http://marmalade.herohamp.xyz:2000/game">Marmalade - Stable</option>--->
                 <option value="http://jade.getsquared.xyz/game">Jade - Beta</option>
                 
@@ -25,12 +25,13 @@
             <input id="submit" type="submit" value="Play!">
            </form>
            <p id="instructions">
-               W/A/S/D to move<br>Space to drop a corner<br>Trap players between your corners to kill them
+              <cmd class="greenletters">
+               W/A/S/D to move<br>Space to drop a corner<br>Trap players between your corners to kill them</cmd>
            </p>
            <br>
            <br>
-           <i><a href="/donate.html" style="font-size:11px;">Say, why don't you donate?</a></i>
-           <br><cmd class="msdos greenletters">It will look like you are typing in command prompt</cmd>
+           <i><a href="/donate.html" style="font-size:11px;"><cmd class="msdos">Say, why don't you donate?</cmd></a></i>
+           <br>
         </section>
         <script type="text/javascript">
         var screenSize = {
