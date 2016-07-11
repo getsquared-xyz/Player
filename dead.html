@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href='./style.css' rel='stylesheet' type='text/css'>
-        <title>You Died...</title>
+        <link href='./commandprompt.css' rel='stylesheet' type='text/css'>
+        <title>You died.</title>
         <script>
         qs = (function(a) {
     if (a == "") return {};
@@ -20,11 +20,12 @@
   })(window.location.search.substr(1).split('&'));</script>
     </head>
     <body>
+        <img src="http://atom.smasher.org/error/98.png.php?icon=skull3&style=98&title=getsquared.exe+has+stopped+responding.&url=&text=Windows+is+checking+for+a+solution+to+the+problem.&b1=Do+something+useful&b1g=x&b2=&b3=Give+up+and+cry">
         <section id="main">
             <div id="main-title">You Died...</div>
-            <p id="nickLabel">You Were Killed By: <script>document.write(qs.killer)</script></p>
-            <p id="nickLabel">Your Points: <script>document.write(qs.points)</script></p>
-            <a href="./index.html" id="playagain">Play Again</a>
+            <p id="nickLabel"><cmd class="msdos">C:\getsquared> echo killer</cmd><br/> You were killed by <script>document.write(qs.killer)</script></p>
+            <p id="nickLabel"><cmd class="msdos">C:\getsquared> echo score</cmd><br/> Your high score was <script>document.write(qs.points)</script></p>
+            <cmd class="greenletters"><a href="./index.html" id="playagain">Play Again</a></cmd>
         </section>
         <script>
             document.getElementById("playagain").href=qs.server+"/game?name="+qs.name; 
