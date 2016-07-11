@@ -3,20 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='./commandprompt.css' rel='stylesheet' type='text/css'>
         <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>GetSquared.xyz</title>
     </head>
     <body>
         <section id="main">
-            <div id="main-title"><cmd class="greenletters">getsquared.xyz</cmd></div>
-            <p id="nickLabel"><cmd class="msdos">C:\getsquared\username> </cmd>
+            <div id="main-title">GetSquared.xyz</div>
+            <p id="nickLabel">Nickname:</p>
             <form action="./" id="join">
-                <cmd class="msdos">C:\getsquared\username> </cmd>
-            <input type="text" placeholder="username" id="nick" name="name" maxlength="20">
+            <input type="text" placeholder="Nick" id="nick" name="name" maxlength="20">
             <br><br>
             <select name="Server" id="server">
-                <option value="./">server</option>
+                <option value="./">-Select-</option>
                 <!--<option value="http://marmalade.herohamp.xyz:2000/game">Marmalade - Stable</option>--->
                 <option value="http://jade.getsquared.xyz/game">Jade - Beta</option>
                 
@@ -25,15 +23,12 @@
             <br><br><!-- Sorry for BR's - Padding doesn't work nicely with input and button tags.-->
             <input id="submit" type="submit" value="Play!">
            </form>
-         
-              <cmd class="greenletters">W/A/S/D to move</cmd><br/><br/><br/>
- +              <cmd class="greenletters">Press space to place corners to make squares</cmd><br/><br/><br/>
- +              <cmd class="greenletters">Trap players inside your squares to kill them!</cmd>
-           
+           <p id="instructions">
+               W/A/S/D to move<br>Space to drop a corner<br>Trap players between your corners to kill them
+           </p>
            <br>
            <br>
-           <i><a href="/donate.html" style="font-size:11px;"><cmd class="msdos">Say, why don't you donate?</cmd></a></i>
-           <br>
+           <i><a href="/donate.html" style="font-size:11px;">Say, why don't you donate?</a></i>
         </section>
         <script type="text/javascript">
         var screenSize = {
