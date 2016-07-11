@@ -1,1 +1,11 @@
-Copyright 2016 Austin H.
+BKFighter Copyright License Template 1.0
+SECTION 1
+The creator(s) of this software, as listed in section 2 permit you to run/execute the following code, but without any modifications, except as contributor or as permitted by owner. Re-Distribution is strictly not allowed without owners permission. You may also not use any code whose origin lies in this project. (Code used from other programs/scripts may be used as permitted by license of said codes project.) You may not hold owners or contributors at fault for any damages caused by this project/script within law.
+SECTION 2
+Owner(s):
+Hampton Moore, Austin Hitt, Ron Friedman
+Contributor(s)
+[list any who wrote any code whose origin lies in this script/project]
+SECTION 3 (optional)
+[list extra permissions as stated by owners]
+License created and maintained by BKFighter (2016). License open source. Please mark all modifications of license to users.
