@@ -13,3 +13,7 @@ cmd.greenletters {
   border: 3px double #CCCCCC;
   padding: 10px;
 }
+
+body {
+  background-color: #000000;
+}
