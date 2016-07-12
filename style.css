@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=VT323);
+.sub {
+    vertical-align: sub;
+}
 .pulse
 {
 	-webkit-animation: pulse 1s linear infinite;
@@ -34,7 +37,7 @@ transform: scale(1, 1);
 };
 }
 
-#instructions, sub{
+#instructions, .sub{
     font-family: 'Share Tech Mono';
     font-size: 13px;
     padding-top: 20px;
