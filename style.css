@@ -12,6 +12,7 @@
 	transform-origin:70% 70%;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	position: absolute;
 }
 @-webkit-keyframes pulse {
  0% {
