@@ -11,6 +11,11 @@
 	animation-timing-function: linear;
 	position: absolute;
 }
+.sub{
+    font-family: 'VT323';
+    font-size: 13px;
+    padding-top: 20px;	
+}
 @-webkit-keyframes pulse {
  0% {
  -webkit-transform: scale(1, 1);
@@ -35,7 +40,7 @@ transform: scale(1, 1);
 };
 }
 
-#instructions, .sub{
+#instructions{
     font-family: 'Share Tech Mono';
     font-size: 13px;
     padding-top: 20px;
