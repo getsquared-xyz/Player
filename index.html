@@ -47,7 +47,7 @@
           var o;
           function online(server) {
               var server = server;
-            $.getJSON(server+'.getsquared.xyz/online', function(data) {
+            $.getJSON('http://'+server+'.getsquared.xyz/online', function(data) {
                 return data;
             });
 }
