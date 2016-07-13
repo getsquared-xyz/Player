@@ -79,7 +79,7 @@ body{
  -webkit-transform: scale(1, 1);
 }
  50% {
- -webkit-transform: scale(1.1, 1.1);
+ -webkit-transform: scale(1.5, 1.5);
 }
  100% {
  -webkit-transform: scale(1, 1);
@@ -90,7 +90,7 @@ body{
  transform: scale(1, 1);
 }
  50% {
- transform: scale(1.1, 1.1);
+ transform: scale(1.5, 1.5);
 }
  100% {
 transform: scale(1, 1);
