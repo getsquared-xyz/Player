@@ -42,6 +42,19 @@
           document.getElementById('server').onchange = function(){
             document.getElementById('join').action = this.value;
           }
+          
+          
+          function online(server) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "http://"+server+".getsquared.xyz/online", true);
+  xhttp.send();
+}
+
 </script>
     </body>
     <footer>
