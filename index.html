@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>GetSquared.xyz</title>
+        <script src="jquery-1.12.4.min.js"></script>
     </head>
     <body>
         <section id="main">
@@ -46,14 +47,9 @@
           var o;
           function online(server) {
               var server = server;
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById(server).text = server+" ["+xhttp.responseText+"]";
-    }
-  };
-  xhttp.open("GET", "http://"+server+".getsquared.xyz/online", true);
-  xhttp.send();
+            $.getJSON(server+'.getsquared.xyz/online', function(data) {
+                return data;
+            });
 }
 online("Marmalade");
 online("Jade");
