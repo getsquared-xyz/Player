@@ -49,7 +49,7 @@
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById(server).text = xhttp.responseText;
+      document.getElementById(server).text = server+" ["+xhttp.responseText+"]";
     }
   };
   xhttp.open("GET", "http://"+server+".getsquared.xyz/online", true);
