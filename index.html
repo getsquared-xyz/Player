@@ -48,7 +48,7 @@
           function online(server) {
               var server = server;
             $.getJSON('http://'+server+'.getsquared.xyz/online', function(data) {
-                return data;
+                document.getElementById(server).text = server+" ["+data.Online+"]" +"Player:" +data.Players;
             });
 }
 online("Marmalade");
