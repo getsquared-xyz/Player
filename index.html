@@ -3,11 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-client_id" content="612154932766-4829bod5p1u8r113gv2ohjae8dmvljdq.apps.googleusercontent.com">
         <link href='./style.css' rel='stylesheet' type='text/css'>
         <title>GetSquared.xyz</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
     <body>
+        <script>
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log('Name: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail());
+                name=profile.getName();
+                settext(name)
+            }
+            function settext(user) {
+                document.getElementById("nick").innerHtml = user;
+            }
+        </script>
         <section id="main">
             <div id="main-title">GetSquared.xyz<span class="pulse">[beta]</span></div>
             <p id="nickLabel">Nickname:</p>
@@ -24,6 +40,7 @@
             <br><br><!-- Sorry for BR's - Padding doesn't work nicely with input and button tags.-->
             <input id="submit" type="submit" value="Play!">
            </form>
+           <div class="g-signin2" data-onsuccess="onSignIn"></div>
            <p id="instructions">
                W/A/S/D to move<br>Space to drop a corner<br>Trap players between your corners to kill them
            </p>
