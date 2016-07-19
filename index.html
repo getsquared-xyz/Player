@@ -17,11 +17,11 @@
                 console.log('Name: ' + profile.getName());
                 console.log('Image URL: ' + profile.getImageUrl());
                 console.log('Email: ' + profile.getEmail());
-                name=profile.getName();
+                name=profile.getEmail();
                 settext(name)
             }
             function settext(user) {
-                document.getElementById("nick").value = user;
+                document.getElementById("nick").value = user.replace("@gmail.com","");;
             }
         </script>
         <section id="main">
@@ -40,9 +40,7 @@
             <br><br><!-- Sorry for BR's - Padding doesn't work nicely with input and button tags.-->
             <input id="submit" type="submit" value="Play!">
            </form>
-           <center>
            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-           </center>
            <p id="instructions">
                W/A/S/D to move<br>Space to drop a corner<br>Trap players between your corners to kill them
            </p>
