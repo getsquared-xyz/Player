@@ -10,20 +10,7 @@
         <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
     <body>
-        <script>
-            function onSignIn(googleUser) {
-                var profile = googleUser.getBasicProfile();
-                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-                console.log('Name: ' + profile.getName());
-                console.log('Image URL: ' + profile.getImageUrl());
-                console.log('Email: ' + profile.getEmail());
-                name=profile.getName();
-                settext(name)
-            }
-            function settext(user) {
-                document.getElementById("nick").value = user.replace(" ","");;
-            }
-        </script>
+         
         <section id="main">
             <div id="main-title">GetSquared.xyz<span class="pulse">[beta]</span></div>
             <p id="nickLabel">Nickname:</p>
@@ -42,7 +29,7 @@
            </form>
            <center>
                <br>
-           <div class="g-signin2" data-onsuccess="onSignIn"></div>
+           
            </center>
            <p id="instructions">
                W/A/S/D to move<br>Space to drop a corner<br>Trap players between your corners to kill them
